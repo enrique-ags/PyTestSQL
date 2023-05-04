@@ -103,4 +103,8 @@ execute  using: pytest testing.py where testing.py is the file that contain asse
 you will see a summary results as shown below:
 ![image](https://user-images.githubusercontent.com/12807393/236123221-2cf944f1-6cd0-4e04-bc2b-612cd2f89991.png)
 
+# Test report
+
+a file executionReport.txt its included. Contains the output from the execution of pytest. Contains a section for fails and also the number of successful checks
+
 doubts: enrique.davila@gmail.com
