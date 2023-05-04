@@ -86,10 +86,13 @@ go to properties in SQL server as shown below:
 ![image](https://user-images.githubusercontent.com/12807393/235498613-48a35f84-60d3-4aa9-9e85-8e5a2ae7ed11.png)
 
 # Executing pytest
+
 write your methods to validate
+
 ![image](https://user-images.githubusercontent.com/12807393/236122799-9ad409a9-66ab-4478-82d6-c44fb33e2a16.png)
 
 write your asserst method
+
 ![image](https://user-images.githubusercontent.com/12807393/236122910-a0762259-dea9-4c53-a778-eb2a99777365.png)
 
 save your file
