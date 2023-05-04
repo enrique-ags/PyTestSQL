@@ -59,30 +59,30 @@ def validateProductsAreNotEmpty():
         return row[0]
         row =cursor.fetchone()
     cursor.close()
-#validate table exist
+#validate table exist,  expected 1
 
 def test_tableExist():
     assert validateTableExist('Persons') == 1
-#validate table exist
+#validate table exist, , expected 1
 def test_tableExist2():
     assert validateTableExist('Person') == 1
 
-#validate there is no empty data in firstname and lastname
+#validate there is no empty data in firstname and lastname, expected Zero
 # in table Person
 def test_NoEmptyData(): 
     assert validateNotEmptyContactInfo() == 0
 
-#validate only phone types 1,2,3 are present on table phonetype
+#validate only phone types 1,2,3 are present on table phonetype, , expected Zero
 def test_validPhoneType():
     assert validatePhoneType()==0
-#validate no duplicated phones are present on table 
+#validate no duplicated phones are present on table , expected Zero
 # [Person].[PersonPhone]
 def test_NoDuplicatePhones():
     assert  validateNoDuplicatedPhones ==0
-#validate safetyProductStock is above 10 producs
+#validate safetyProductStock is above 10 producs, , expected Zero
 def test_validateSafetyStock():
     assert  validateProductSafetyStock()==0
-#validate Product Name is not null or len equal zero
+#validate Product Name is not null or len equal zero, , expected Zero
 def test_validateProductNameNotEmpty():
     assert validateProductsAreNotEmpty()==0
 
