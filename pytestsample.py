@@ -59,10 +59,11 @@ def validateProductsAreNotEmpty():
         return row[0]
         row =cursor.fetchone()
     cursor.close()
+#validate table exist
 
 def test_tableExist():
     assert validateTableExist('Persons') == 1
-
+#validate table exist
 def test_tableExist2():
     assert validateTableExist('Person') == 1
 
