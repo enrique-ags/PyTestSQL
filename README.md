@@ -1,10 +1,11 @@
-# PyTestSQL
+# PyTest and SQL server
 This code is to validate tables using pytest and SSQL server
 
-#install pytest using pip
+# install pytest using pip
 
 1. pip install -U pytest
-#Create a SQL user and enable SQL authentication mode for this new user
+
+# Create a SQL user and enable SQL authentication mode for this new user
 
 verify if system has installed the following packages:
 
