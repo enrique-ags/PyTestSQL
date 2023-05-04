@@ -1,0 +1,39 @@
+C:\bkp>pytest pytestsample.py
+==================================== test session starts =====================================
+platform win32 -- Python 3.11.3, pytest-7.3.1, pluggy-1.0.0
+rootdir: C:\bkp
+collected 7 items
+
+pytestsample.py ....FFF                                                                 [100%]
+
+========================================== FAILURES ==========================================
+___________________________________ test_NoDuplicatePhones ___________________________________
+
+    def test_NoDuplicatePhones():
+>       assert  validateNoDuplicatedPhones ==0
+E       assert validateNoDuplicatedPhones == 0
+
+pytestsample.py:80: AssertionError
+__________________________________ test_validateSafetyStock __________________________________
+
+    def test_validateSafetyStock():
+>       assert  validateProductSafetyStock()==0
+E       assert 55 == 0
+E        +  where 55 = validateProductSafetyStock()
+
+pytestsample.py:83: AssertionError
+______________________________ test_validateProductNameNotEmpty ______________________________
+
+    def test_validateProductNameNotEmpty():
+>       assert validateProductsAreNotEmpty()==0
+E       assert 2 == 0
+E        +  where 2 = validateProductsAreNotEmpty()
+
+pytestsample.py:86: AssertionError
+================================== short test summary info ===================================
+FAILED pytestsample.py::test_NoDuplicatePhones - assert validateNoDuplicatedPhones == 0
+FAILED pytestsample.py::test_validateSafetyStock - assert 55 == 0
+FAILED pytestsample.py::test_validateProductNameNotEmpty - assert 2 == 0
+================================ 3 failed, 4 passed in 0.80s =================================
+
+C:\bkp>
